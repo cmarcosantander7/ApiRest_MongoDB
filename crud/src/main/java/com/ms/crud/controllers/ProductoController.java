@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 
 @RestController
@@ -16,6 +17,7 @@ import java.util.List;
 public class ProductoController {
     @Autowired
     private IProductDAO repository;
+
 
     @PostMapping("/product")
     public ProductoDTO create(@Validated @RequestBody ProductoDTO p) {
